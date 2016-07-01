@@ -30,53 +30,94 @@
   </head>
    <body>
 
-    <div class="site-wrapper">
+<!-- Bootstrap class -->
+<div class = "container">
 
-      <div class="site-wrapper-inner">
+<nav>
+        <div class="container"> <!-- This container helps remedy how left edge of navs are on left edge of browser by giving you option to style the width -->
+          <h1 id="brand">estroid</h1> <!-- H1 with text replacement will still work if images are turned off, making it accesible to screen readers. -->
 
-        <div class="cover-container">
-
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Cover</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li class="active"><a href="#">Home</a></li>
-                  <li><a href="#">Features</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-
-          <div class="inner cover">
-            <h1 class="cover-heading">Cover your page.</h1>
-            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-            <p class="lead">
-              <a href="#" class="btn btn-lg btn-default">Learn more</a>
-            </p>
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-            </div>
-          </div>
-
+            <ul>
+                <button type="button" class="btn btn-secondary"><li><a href="#about">ABOUT</a></li></button>
+                <li><a href="#work">WORK</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
         </div>
+      </nav>
+    </header>
 
+<!-- Hero image section -->
+    <section id="hero">
+      <img src="images/BreakfastingwithMichael.png" alt="Esther photo">
+      <h2>Red Accordions</h2>
+      <span class="who">Web Developer and Poet </span>
+    </section>
+
+<!-- Main body content -->
+    <section id="main-content">
+      <div class="container">
+        <p class="caption">"Persistence" photograph (above) by Michael Marcinek.</p>
+
+<!-- About section -->
+        <section class="column" id="about">
+          <img src="images/Converse.png" alt="converse shoes">
+          <h4>About</h4>
+          <p>Hi, I'm Esther (aka estroid), a front end web developer in Atlanta. I have 13+ years of experience as a writer, artist, and teacher in higher education. I’m excited about building websites and applications that are beautiful, actionable resources for people.</p>
+          <a href="" class="btn">More</a>
+        </section>
+
+<!-- Work section -->
+        <section class="column" id="work">
+          <img src="images/Bowie.png" alt="laptop">
+          <h4>Work</h4>
+          <p>XXXX</p>
+          <a href="" class="btn">Samples</a>
+        </section>
+
+<!-- Contact section -->
+        <section class="column" id="contact">
+          <img src="images/PhoneBooth.png" alt="phone booth">
+          <h4>Contact</h4>
+          <p></p>
+          <a href="" class="btn">I'd love to hear from you</a>
+        </section>
       </div>
+    </section>
 
-    </div>
+<!-- social media -->
+    <section id="social">
+      <div class="container">
+        <h3>Some kind of text about connecting!</h3>
+        <ul>
+          <li><a href="https://twitter.com/estroid_lee"><img src="images/twitter.png" alt="Twitter"></a></li>
+          <li><a href="https://www.linkedin.com/in/estroid"><img src="images/linked_in_white.png" alt="LinkedIn"></a></li>
+          <li><a href="https://medium.com/@estroid"><img src="images/medium.png" alt="Medium"></a></li>
+          <li><a href="https://github.com/estroid?tab=repositories"><img src="images/github.png" alt="Github"></a></li>
+          <!-- <li><img src="xxx.svg" alt="Pinterest"></li>
+          <li><img src="xxx.svg" alt="Yelp"></li> -->
+        </ul>
+      </div>
+    </section>
+
+<!-- See about white icons or changing color of svg files -->
+    <footer>
+      <p>&copy; 2016 Esther Lee</p>
+    </footer>
+
+</div>
+
+
 
 <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
   </body>
 </html>
 
